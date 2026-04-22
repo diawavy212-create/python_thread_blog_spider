@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9949629-5421-4d8e-b5c6-0e6fede69d99" name="更改" comment="新增了线程池技术">
-      <change afterPath="$PROJECT_DIR$/05.flask_thread_pool.py" afterDir="false" />
+    <list default="true" id="e9949629-5421-4d8e-b5c6-0e6fede69d99" name="更改" comment="6.验证多进程对cpu密集型提速">
+      <change afterPath="$PROJECT_DIR$/07.flask_process_pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_spider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,67 +63,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.02.producer_consumer_spider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.03.lock_concurrent.executor&quot;: &quot;Run&quot;,
-    &quot;Python.04.thread_pool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.05.flask_thread_pool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.blog_spider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.multi_thread_craw.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.02.producer_consumer_spider.executor": "Run",
+    "Python.03.lock_concurrent.executor": "Run",
+    "Python.04.thread_pool.executor": "Run",
+    "Python.05.flask_thread_pool.executor": "Run",
+    "Python.06.thread_process_cpu_bound.executor": "Run",
+    "Python.07.flask_process_pool.executor": "Run",
+    "Python.blog_spider.executor": "Run",
+    "Python.multi_thread_craw.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master1",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
-  <component name="RunManager" selected="Python.05.flask_thread_pool">
-    <configuration name="02.producer_consumer_spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python并发编程" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02.producer_consumer_spider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="03.lock_concurrent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python并发编程" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03.lock_concurrent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Python.07.flask_process_pool">
     <configuration name="04.thread_pool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python并发编程" />
       <option name="ENV_FILES" value="" />
@@ -167,6 +126,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="06.thread_process_cpu_bound" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python并发编程" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06.thread_process_cpu_bound.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="07.flask_process_pool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python并发编程" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07.flask_process_pool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="blog_spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python并发编程" />
       <option name="ENV_FILES" value="" />
@@ -191,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.07.flask_process_pool" />
+        <item itemvalue="Python.06.thread_process_cpu_bound" />
         <item itemvalue="Python.05.flask_thread_pool" />
         <item itemvalue="Python.04.thread_pool" />
         <item itemvalue="Python.blog_spider" />
-        <item itemvalue="Python.03.lock_concurrent" />
-        <item itemvalue="Python.02.producer_consumer_spider" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +289,31 @@
       <option name="project" value="LOCAL" />
       <updated>1776770932457</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="5.新增了web线程池技术">
+      <option name="closed" value="true" />
+      <created>1776774912783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1776774912783</updated>
+    </task>
+    <task id="LOCAL-00011" summary="5.新增了web线程池技术">
+      <option name="closed" value="true" />
+      <created>1776775121918</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1776775121918</updated>
+    </task>
+    <task id="LOCAL-00012" summary="6.验证多进程对cpu密集型提速">
+      <option name="closed" value="true" />
+      <created>1776836467414</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776836467414</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +332,8 @@
     <MESSAGE value="no.2" />
     <MESSAGE value="no.3" />
     <MESSAGE value="新增了线程池技术" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了线程池技术" />
+    <MESSAGE value="5.新增了web线程池技术" />
+    <MESSAGE value="6.验证多进程对cpu密集型提速" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.验证多进程对cpu密集型提速" />
   </component>
 </project>
